@@ -1,5 +1,5 @@
 import styles from './Hero.module.css';
-import minhaFoto from '../../assets/otavio.png';
+import Photo3D from './Photo3D';
 
 export default function Hero() {
   return (
@@ -16,8 +16,7 @@ export default function Hero() {
         </p>
       </div>
       <div className={styles.imageWrapper}>
-        <div className={styles.blob}></div>
-        <img src={minhaFoto} alt="Otavio Emanoel" className={styles.heroImg} />
+        <Photo3D />
       </div>
     </section>
   );

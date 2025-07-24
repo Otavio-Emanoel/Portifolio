@@ -51,6 +51,24 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
+}
+
+.imageWrapper::after {
+  content: '';
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 80%;
+  height: 30%;
+  background: linear-gradient(135deg, #0c154144, #3a5aff00);
+  border-radius: 55% 45% 60% 40% / 50% 60% 40% 60%;
+  z-index: 0;
+  box-shadow: 0 16px 64px #0008;
+  pointer-events: none;
+  transition: background-color 0.3s;
+  filter: blur(2px);
 }
 
 .blob {
